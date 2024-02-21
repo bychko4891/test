@@ -1,13 +1,34 @@
-'use client';
+// 'use client';
+//
+// import React, {createContext} from "react";
+//
+// const ThemeContext = createContext({})
+//
+// export default function ThemeProvider({children}){
+//     return (
+//         <ThemeContext.Provider value="dark">
+//             {children}
+//         </ThemeContext.Provider>
+//     )
+// }
 
-import React, {createContext} from "react";
+import React, { createContext, useState } from "react";
 
-const ThemeContext = createContext({})
+// Створіть контекст
+const MyContext = createContext();
 
-export default function ThemeProvider({children}){
+// Створіть провайдер контексту
+export function MyContextProvider({ children }) {
+    const [buttonClicked, setButtonClicked] = useState(false);
+
+    // Функція для обробки кліку по кнопці
+    const handleButtonClick = () => {
+        setButtonClicked(true);
+    };
+
     return (
-        <ThemeContext.Provider value="dark">
+        <MyContext.Provider value={{ buttonClicked, handleButtonClick }}>
             {children}
-        </ThemeContext.Provider>
-    )
+        </MyContext.Provider>
+    );
 }
