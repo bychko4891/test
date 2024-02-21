@@ -1,7 +1,16 @@
+"use server";
+
 import {LogoMobile} from "@/components/header/LogoMobile";
 import {BurgerIco} from "@/components/header/BurgerIco";
+import { useState } from "react";
 
 export const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  function onBurgerIcoClick() {
+    setOpen(!open);
+  }
+
     return (
         <header>
             <div className="header">
