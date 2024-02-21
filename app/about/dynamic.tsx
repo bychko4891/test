@@ -1,31 +1,17 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
+import { sendForm } from "./sendForm";
 
 export function ClientComponent({ children }: { children: ReactNode }) {
-  const [count, setCounet] = useState(0);
+  async function handleClick() {
+    const data = await sendForm();
+    console.log(data);
+  }
 
   return (
-    <div>
-      Client component
-      <div>
-        Count: {count}
-        <button
-          onClick={() => {
-            setCounet(count + 1);
-          }}
-        >
-          Add
-        </button>
-        <button
-          onClick={() => {
-            setCounet(count - 1);
-          }}
-        >
-          Remove
-        </button>
-      </div>
-      {children}
+    <div id="main-wrapper" className="class">
+      <button onClick={handleClick}>Send form</button>
     </div>
   );
 }
