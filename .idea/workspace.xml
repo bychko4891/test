@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53d2d9bc-c241-46fd-814a-847683b93fc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/BurgerIco.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/LogoMobile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/sidebar/SideBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/providers/ThemeContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="53d2d9bc-c241-46fd-814a-847683b93fc1" name="Changes" comment="one commit">
+      <change afterPath="$PROJECT_DIR$/app/StaticLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/about/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/about/Button2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MainWrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/dynamic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/dynamic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/test/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/BurgerIco.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/BurgerIco.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/LogoMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/LogoMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sidebar/SideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sidebar/SideBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +35,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main_temp" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2cfwG3x0WOZtMaaqw7SmWgZO4lP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,13 +64,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "send-request-on-server",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/anatolii/WebstormProjects/ChatUI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.debug.executor": "Run",
+    "npm.dev.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\anatolii\\WebstormProjects\\lear_english_ui\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -83,13 +89,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\providers" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\components" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\components\sidebar" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\components\header" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="debug" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <node-options value="--inspect" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -100,6 +118,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.debug" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,6 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708515841249</updated>
       <workItem from="1708515842311" duration="15776000" />
+      <workItem from="1708773652047" duration="18546000" />
     </task>
     <servers />
   </component>

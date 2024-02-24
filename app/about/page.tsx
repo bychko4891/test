@@ -13,8 +13,8 @@ export default async function About() {
   // const data = await fetch("https://some.com");
 
   return (
-    <ClientComponent>
-      <ServerComponent />
-    </ClientComponent>
+      <ClientComponent>
+        <ServerComponent />
+      </ClientComponent>
   );
 }

@@ -2,8 +2,7 @@ import React, {useContext} from "react";
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
-import {Header} from "@/components/header/Header";
-import {SideBar} from "@/components/sidebar/SideBar";
+import {StaticLayout} from "@/app/StaticLayout";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -13,24 +12,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-        children,
-   }: Readonly<{
+                                       children,
+                                   }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-        {/*<body className={inter.className}>{children}</body>*/}
-        <body>
-        <div id="main-wrapper" className="class">
-            <Header/>
-            <SideBar/>
-            <div id="app-content">
-                <div className="app-content-area">
+        <html lang="uk-UA">
+            <body>
+                <StaticLayout>
                     {children}
-                </div>
-            </div>
-        </div>
-        </body>
+                </StaticLayout>
+            </body>
         </html>
     );
 }

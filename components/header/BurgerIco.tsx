@@ -1,5 +1,7 @@
-"use client";
-export const BurgerIco = ({ onClick }) => {
+
+import React from "react";
+
+export const BurgerIco = ({ onClick }:{onClick:any}) => {
     const BurgerIcoClickHandler = () => {
         if (onClick) {
             onClick();
