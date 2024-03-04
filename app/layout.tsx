@@ -1,10 +1,14 @@
-import React, {useContext} from "react";
+import React from "react";
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
-import {StaticLayout} from "@/app/StaticLayout";
+import "./bootstrap.custom.min.css";
+import {ConstantLayout} from "@/app/ConstantLayout";
+import {SideBar} from "@/components/constantLayout/sidebar/SideBar";
+import {Providers} from "@/components/Providers";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({subsets: ["latin"]}
+);
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -18,11 +22,18 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="uk-UA">
-            <body>
-                <StaticLayout>
-                    {children}
-                </StaticLayout>
-            </body>
+        <body>
+        <Providers>
+            <ConstantLayout>
+                <SideBar/>
+                <main id="app-content">
+                    <div className="app-content-area">
+                        {children}
+                    </div>
+                </main>
+            </ConstantLayout>
+        </Providers>
+        </body>
         </html>
     );
 }

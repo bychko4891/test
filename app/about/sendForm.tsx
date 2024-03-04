@@ -1,7 +1,10 @@
 "use server";
 
-export async function sendForm() {
-  console.log("received form submition");
+import {type} from "node:os";
+
+
+export async function sendForm(formData: FormData ) {
+  // console.log(formData + " received form submition");
 
   return "data";
 }

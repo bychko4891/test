@@ -1,4 +1,4 @@
-import {Button2} from "@/app/about/Button2";
+import {AboutContent} from "@/app/about/AboutContent";
 
 export const Button = ({ onClick }:{onClick:any }) => {
     // const BurgerIcoClickHandler = () => {
@@ -10,7 +10,7 @@ export const Button = ({ onClick }:{onClick:any }) => {
         <>
 
                 {/*<button onClick={BurgerIcoClickHandler}>Send form</button>*/}
-            <Button2 onClick={onClick} />
+            <AboutContent onClick={onClick} />
 
         </>
     );
