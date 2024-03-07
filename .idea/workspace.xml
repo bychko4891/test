@@ -4,51 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53d2d9bc-c241-46fd-814a-847683b93fc1" name="Changes" comment="one two">
-      <change afterPath="$PROJECT_DIR$/app/(protected)/user/profile/getUserAPI.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/avatar/[name]/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/LeftBlock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/RightBlock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/SettingsIco.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/UserInfo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/UserInfoBlock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/UserNavigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/UserPhoto.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/userstyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/date.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/female.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/male.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/profile_fone.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SetHttpOnlyCookies.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SetHttpOnlyCookies.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(protected)/jwtSessionService/authTokenHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/jwtSessionService/authTokenHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(protected)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(protected)/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/user/profile/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/getAboutAPI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/getAboutAPI.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/update-cookies.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap.custom.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.custom.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetchWithToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/fetchWithToken.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auntification/Breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auntification/Breadcrumb.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auntification/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auntification/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/BlackWhiteThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/BlackWhiteThemeSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/LoginButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/LoginButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/Notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/Notifications.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/RightGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/RightGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/UserGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/UserGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/sidebar/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/sidebar/Logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/configs/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/next.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewareRedirect.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="53d2d9bc-c241-46fd-814a-847683b93fc1" name="Changes" comment="one three" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +161,7 @@
       <workItem from="1709573677974" duration="14253000" />
       <workItem from="1709628326602" duration="26088000" />
       <workItem from="1709706668815" duration="27215000" />
-      <workItem from="1709793399923" duration="13619000" />
+      <workItem from="1709793399923" duration="14081000" />
     </task>
     <task id="LOCAL-00001" summary="one commit">
       <option name="closed" value="true" />
@@ -231,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709586394350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="one three">
+      <option name="closed" value="true" />
+      <created>1709813515282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709813515282</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +205,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="one commit" />
     <MESSAGE value="one two" />
-    <option name="LAST_COMMIT_MESSAGE" value="one two" />
+    <MESSAGE value="one three" />
+    <option name="LAST_COMMIT_MESSAGE" value="one three" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
