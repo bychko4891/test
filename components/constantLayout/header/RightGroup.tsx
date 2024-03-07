@@ -1,7 +1,7 @@
 import React from "react";
-import BlackWhiteThemeSwitcher from "@/components/constantLayout/header/BlackWhiteThemeSwitcher";
-import {Notifications} from "@/components/constantLayout/header/Notifications";
-import {UserGroup} from "@/components/constantLayout/header/UserGroup";
+import {BlackWhiteThemeSwitcher} from "./BlackWhiteThemeSwitcher";
+import {Notifications} from "./Notifications";
+import {UserGroup} from "./UserGroup";
 import {useSession} from "next-auth/react";
 import {LoginButton} from "@/components/constantLayout/header/LoginButton";
 

@@ -106,9 +106,7 @@ export const authConfig: AuthOptions = {
                         const user = (await response.json()) as SuccessLoginResponse;
                         profile.image = user.image;
                         setJwtAccessToken(user.jwtAccessToken);
-                        setJwtRefreshToken(user.jwtRefreshToken);
-                        account.access_token = user.jwtAccessToken;
-                        account.refresh_token = user.jwtRefreshToken;
+                        setJwtRefreshToken(user.jwtRefreshToken);;
 
                         return true;
                     }
