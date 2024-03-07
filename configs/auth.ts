@@ -22,7 +22,6 @@ export const authConfig: AuthOptions = {
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID!,
             clientSecret: process.env.GOOGLE_SECRET!,
-            profileUrl: "https://www.googleapis.com/oauth2/v3/userinfo",
         }),
         Credentials({
             credentials: {
@@ -35,6 +34,7 @@ export const authConfig: AuthOptions = {
                     email: credentials.email,
                     password: credentials.password
                 }
+                console.log("123 123 123")
                 const response = await fetch(env.SERVER_API_URL + '/api/auth/login', {
                     method: 'POST',
                     body: JSON.stringify(formData),
@@ -43,20 +43,17 @@ export const authConfig: AuthOptions = {
                     }
 
                 });
-
+                console.log(response.status);
                 if (response.status === 401) {
-                    // console.log(response);
+                    console.log(response + " 401 !!!! 1!! 1 1");
                     return null;
                 }
                 if (response.status === 200) {
                     const user = (await response.json()) as SuccessLoginResponse;
-                    // console.log(user.id + ' id user');
-                    // console.log(user.name + ' id user');
-                    // console.log(user.jwtAccessToken + ' jwtAccessToken');
-                    // console.log(user.jwtRefreshToken + ' jwtRefreshToken');
+
                     setJwtAccessToken(user.jwtAccessToken);
-                    setJwtRefreshToken(user.jwtRefreshToken)
-                    // console.log(user + ' user !!! !!!');
+                    setJwtRefreshToken(user.jwtRefreshToken);
+
                     return user as User;
                 }
 
@@ -68,7 +65,6 @@ export const authConfig: AuthOptions = {
     pages: {
         signIn: '/login',
         // error: '/your-custom-error-page', // вказуйте свою власну сторінку для обробки помилок
-        // signIn: '/signin', // сторінка для входу
         // signOut: '/signout', // сторінка для виходу
         // newUser: '/newuser', // сторінка для нових користувачів
 
@@ -91,8 +87,7 @@ export const authConfig: AuthOptions = {
                 if (profile?.email!) {
                     const formData = {
                         email: profile.email,
-                        name: profile.name,
-                        image: user.image
+                        name: profile.name
                     }
                     const response = await fetch(env.SERVER_API_URL + '/api/auth/google', {
                         method: 'POST',
@@ -103,12 +98,13 @@ export const authConfig: AuthOptions = {
                     });
                     if (response.status === 200) {
 
-                        const user = (await response.json()) as SuccessLoginResponse;
-                        profile.image = user.image;
-                        setJwtAccessToken(user.jwtAccessToken);
-                        setJwtRefreshToken(user.jwtRefreshToken);
-                        account.access_token = user.jwtAccessToken;
-                        account.refresh_token = user.jwtRefreshToken;
+                        const userRemote = (await response.json()) as SuccessLoginResponse;
+
+                        profile.image = userRemote.image;
+                        user.id = userRemote.id;
+                        user.image = userRemote.image;
+                        setJwtAccessToken(userRemote.jwtAccessToken);
+                        setJwtRefreshToken(userRemote.jwtRefreshToken);
 
                         return true;
                     }
@@ -123,6 +119,6 @@ export const authConfig: AuthOptions = {
         },
 
 
-    }
+    },
 
 }

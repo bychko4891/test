@@ -27,9 +27,7 @@ export default function RootLayout({
             <ConstantLayout>
                 <SideBar/>
                 <main id="app-content">
-                    <div className="app-content-area">
-                        {children}
-                    </div>
+                    {children}
                 </main>
             </ConstantLayout>
         </Providers>

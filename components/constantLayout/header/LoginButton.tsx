@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export const LoginButton = () => {
     return (
         <li>
-            <a href="/login" >
-                <button className="btn_main" type="submit" >Вхід</button>
-            </a>
+            <Link href="/login" className="btn_main">
+                Вхід
+            </Link>
         </li>
     )
 };

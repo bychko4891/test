@@ -621,12 +621,7 @@ button.reset-styles:hover {
     border-radius: 20px;
 }
 
-.container_2 {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-}
+
 
 .background-image {
     width: 100%;
@@ -642,61 +637,6 @@ button.reset-styles:hover {
     height: auto;
     border: 3px solid var(--dashui-indigo);
     border-radius: 50%;
-}
-
-.profile-content {
-    margin: 40px 0 0 50px;
-}
-
-@media (max-width: 767.99px) {
-    .user-avatar {
-        bottom: -42px;
-        max-width: 100px;
-    }
-
-}
-
-@media (min-width: 768px) {
-    .user-avatar {
-        bottom: -50px;
-        max-width: 120px;
-    }
-
-}
-
-@media (min-width: 1020px) {
-    .user-avatar {
-        bottom: -50px;
-        max-width: 120px;
-    }
-
-}
-
-@media (min-width: 1280px) {
-    .user-avatar {
-        bottom: -60px;
-        max-width: 150px;
-    }
-
-}
-
-@media (min-width: 1460px) {
-
-    .user-avatar {
-        bottom: -80px;
-        max-width: 200px;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .row-cols-1 > * {
-        margin-bottom: 16px;
-    }
-
-    .profile-content {
-        margin: 0 0 0 20px;
-    }
 }
 
 .left_border {

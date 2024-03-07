@@ -5,7 +5,7 @@ import Link from "next/link";
 import "./logitStyle.css";
 import {LoginForm} from "@/components/auntification/LoginForm";
 import {GoogleButtonSignUp} from "@/components/auntification/GoogleButtonSignUp";
-import {GoogleColorSvgComponent} from "@/components/auntification/GoogleColorSvgComponent";
+import Image from "next/image";
 
 
 export const Login = () => {
@@ -32,14 +32,14 @@ export const Login = () => {
                     <div className="text-center p-t-136 mx-auto">
                         <Link className="txt2 d-flex align-items-center" href="/signup">
                             <span>Створити аккаунт</span>
-                            <img className="colored-svg reset-styles ms-2 position-relative" src="/images/arrow.svg"
+                            <Image className="colored-svg reset-styles ms-2 position-relative" src="/images/arrow.svg"
                                  alt="Create accaunt" width="20" height="20"/>
                         </Link>
                     </div>
                 </div>
 
                 <div className="login100-pic js-tilt">
-                    <img src="/images/login-img.png" alt="User login"/>
+                    <Image src="/images/login-img.png" alt="User login" width="316"  height="289" />
                 </div>
 
             </div>

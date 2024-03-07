@@ -6,8 +6,8 @@ export function setJwtAccessToken(jwtAccessToken: string) {
     cookies().set({
         name: JWT_ACCESS_TOKEN,
         value: jwtAccessToken,
-        // maxAge: 60 * 2, // 2m
-        maxAge: 60 * 15, // 15m
+        maxAge: 60 * 2, // 2m
+        // maxAge: 60 * 15, // 15m
         httpOnly: true,
         path: "/",
         secure: true,

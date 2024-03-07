@@ -1,6 +1,7 @@
 import React from 'react';
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+import Image from "next/image";
 
 export const Notifications = () => {
     return (
@@ -9,8 +10,7 @@ export const Notifications = () => {
 
             <a className="btn btn-ghost btn-icon rounded-circle" href="#!" role="button" id="dropdownNotification" data-bs-toggle="dropdown" aria-haspopup="true"
                aria-expanded="false">
-                <img className="colored-svg reset-styles ms-auto" src="/images/bell-alert.svg"
-                     alt="profile" width="25" height="25"/>
+                <Image className="colored-svg reset-styles ms-auto" src="/images/bell-alert.svg" alt="profile" width="25" height="25"/>
             </a>
 
             <div className="dropdown-menu dropdown-menu-lg dropdown-menu-end" aria-labelledby="dropdownNotification">
@@ -18,7 +18,7 @@ export const Notifications = () => {
                     <div className="border-bottom px-3 pt-2 pb-3 d-flex justify-content-between align-items-center">
                         <p className="mb-0 text-dark fw-medium fs-4">Notifications</p>
                         <a href="#!" className="text-muted">
-                            <img className="colored-svg reset-styles ms-auto" src="/images/settings.svg" alt="Settings" width="20" height="20"/>
+                            <Image className="colored-svg reset-styles ms-auto" src="/images/settings.svg" alt="Settings" width="20" height="20" />
                         </a>
                     </div>
 

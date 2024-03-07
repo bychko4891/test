@@ -13,55 +13,57 @@ export default async function Layout({children}: { children: ReactNode }) {
 
     const accessTokenCookie = await getJwtAccessToken();
     const accessTokenCookieIsEmpty = accessTokenCookie === undefined;
-
-    if (accessTokenCookie === undefined) {
-        const accessToken = await newAccessToken(accessTokenCookieIsEmpty);
-        if (accessToken !== undefined) {
-            return (
-                <>
-                    <h1> Layout protected</h1>
-                    {children}
-                    <SetAccessToken accessToken={accessToken} />
-                </>
-            );
-        } else {
-            const tokens = await newRefreshAndAccessToken();
-            return (
-                <>
-                    <h1> Layout protected</h1>
-                    {children}
-                    <SetAllTokens tokens={tokens} />
-                </>
-            );
-        }
-    } else {
+console.log(accessTokenCookie + ' token cookie ! ! !')
+    if (!accessTokenCookie) {
         return (
             <>
-                <h1> Layout protected</h1>
+                <h1> Layout protected Layout protectedLayout
+                    protectedLayout protectedLayout protectedLayout
+                    protectedLayout protectedLayout protectedLayout
+                    protectedLayout protectedLayout protectedLayout
+                    protectedLayout protectedLayout protectedLayout
+                    protectedLayout protectedLayout protectedLayout
+                    protectedLayout protectedLayout protectedLayout
+                    protectedLayout protectedLayout protectedLayout protectedLayout protected</h1>
                 {children}
             </>
         );
     }
+
+    const accessToken = await newAccessToken(accessTokenCookieIsEmpty);
+    if (accessToken) {
+        return (
+            <>
+                <h1> Layout protected</h1>
+
+                {children}
+                <SetAccessToken accessToken={accessToken}/>
+            </>
+        );
+    } else {
+        const tokens = await newRefreshAndAccessToken();
+        return (
+            <>
+                <h1> Layout protected</h1>
+
+                {children}
+                {/*<SetAllTokens tokens={tokens}/>*/}
+
+            </>
+        );
+    }
+
 }
 
 async function newAccessToken(accessTokenIsEmpty: boolean): Promise<string | undefined> {
 
     if (accessTokenIsEmpty) {
-        const refreshToken = cookies().get(JWT_REFRESH_TOKEN);
-        if (!refreshToken) {
-            throw await redirectUnauthorized();
-        }
-
-        return await regenerateAccessToken(refreshToken.value);
+        return await regenerateAccessToken();
     }
     return undefined;
 }
 
 async function newRefreshAndAccessToken(): Promise<SuccessAccessTokenRegeneration> {
-    const refreshToken = cookies().get(JWT_REFRESH_TOKEN);
-    if (!refreshToken) {
-        throw await redirectUnauthorized();
-    }
 
-    return await regenerateAllTokens(refreshToken.value);
+    return await regenerateAllTokens();
 }
