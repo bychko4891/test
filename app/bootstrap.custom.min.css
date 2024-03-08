@@ -110,6 +110,14 @@
     .fs-4 {
         font-size: 1.5rem !important
     }
+
+    .h3, h3 {
+        font-size: 1.75rem;
+    }
+}
+
+.ms-1 {
+    margin-left: .25rem !important
 }
 
 .me-1 {
@@ -136,6 +144,10 @@
 
 .text-center {
     text-align: center !important
+}
+
+.text-justify {
+    text-align: justify !important
 }
 
 .px-4 {
@@ -209,22 +221,17 @@
     width: 95% !important
 }
 
-
-
-
-
-
 .col-12 {
     flex: 0 0 auto;
     width: 100%
 }
 
-@media (min-width: 768px) {
-    .col-md-6 {
-        flex: 0 0 auto;
-        width: 50%
-    }
-}
+/*@media (min-width: 768px) {*/
+/*    .col-md-6 {*/
+/*        flex: 0 0 auto;*/
+/*        width: 50%*/
+/*    }*/
+/*}*/
 
 .gap-1 {
     gap: .25rem !important
@@ -249,4 +256,71 @@ dl, ol, ul {
 
 .mb__1 {
     margin-bottom: -.25rem
+}
+
+.overflow-hidden {
+    overflow: hidden !important
+}
+
+.col {
+    flex: 1 0 0%
+}
+
+.overflow-visible {
+    overflow: visible !important
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+.row > * {
+    flex-shrink: 0;
+    /*width: 100%;*/
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.p-0 {
+    padding: 0 !important
+}
+
+.w-100 {
+    width: 100% !important
+}
+
+@media (min-width: 768px) {
+
+    .row-cols-md-2 > * {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25% !important;
+    }
+
+    /*    .col-md-6 {*/
+    /*        flex: 0 0 auto;*/
+    /*        width: 50%*/
+    /*    }*/
 }

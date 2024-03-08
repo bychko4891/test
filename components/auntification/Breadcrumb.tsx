@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 type BreadcrumbNavigation = {
     href: string,
@@ -13,7 +14,7 @@ export const Breadcrumb = ({breadcrumb}: Props) => {
             <ol className="breadcrumb d-flex gap-3">
                 <li className="breadcrumb-item">
                     <Link href="/">
-                        <img className="colored-svg reset-styles ms-auto" src="/images/home.svg" alt="profile"
+                        <Image className="colored-svg reset-styles ms-auto" src="/images/home.svg" alt="profile"
                              width="20" height="20"/>
                     </Link>
                 </li>

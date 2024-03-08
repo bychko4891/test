@@ -83,7 +83,14 @@ export const authConfig: AuthOptions = {
             // Send properties to the client, like an access_token and user id from a provider.
             // session.accessToken = token.accessToken
             // session.user.id = token.id
-
+            if (session.expires) {
+                // Скасовуємо сесію користувача
+                return {
+                    ...session,
+                    error: 'Session revoked due to session change',
+                    active: false, // Встановлюємо сесію як неактивну
+                };
+            }
             return session
         },
         async signIn({account, profile, user, credentials}) {

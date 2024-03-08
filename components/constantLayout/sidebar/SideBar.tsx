@@ -18,7 +18,7 @@ export const SideBar = () => {
 
     return (
         <div className="app-menu">
-            <div className="navbar-vertical navbar nav-dashboard">
+            <div className="navbar-vertical navbar nav-dashboard" style={{zIndex: 2}} >
                 <div className="h-100">
                     <Logo />
                     <div className="sidebar navbar-nav flex-column">

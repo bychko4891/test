@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import {signOut, useSession} from "next-auth/react";
+import Image from "next/image";
 
 export const UserGroup = () => {
 
@@ -11,7 +12,7 @@ export const UserGroup = () => {
         });
     }, []);
 
-    const avatar = session.data?.user?.image || "/images/avatar-2.jpeg";
+    const avatar = "/api/avatar/" + session.data?.user?.image || "/images/avatar-2.jpeg";
 
     return (
 
@@ -19,7 +20,7 @@ export const UserGroup = () => {
             <a className="rounded-circle" href="#!" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div className="avatar avatar-md avatar-indicators avatar-online">
 
-                    <img id="userAvatar"  src={avatar}  alt="User avatar" className="rounded-circle"/>
+                    <Image id="userAvatar"  src={avatar}  alt="User avatar" className="rounded-circle" width="40" height="40" />
 
                 </div>
             </a>
@@ -37,28 +38,28 @@ export const UserGroup = () => {
 
                     <li>
                         <Link className="dropdown-item d-flex align-items-center" href="user/edit">
-                            <img className="colored-svg reset-styles me-2" src="/images/edit-user.svg" alt="User edit profile"
+                            <Image className="colored-svg reset-styles me-2" src="/images/edit-user.svg" alt="User edit profile"
                                  width="15" height="15"/>
                             Редагувати
                         </Link>
                     </li>
                     <li>
                         <Link className="dropdown-item d-flex align-items-center" href="user/statistics">
-                            <img className="colored-svg reset-styles me-2" src="/images/statistics.svg"
+                            <Image className="colored-svg reset-styles me-2" src="/images/statistics.svg"
                                  alt="User statistics" width="15" height="15"/>
                             Статистика
                         </Link>
                     </li>
                     <li>
                         <Link className="dropdown-item d-flex align-items-center" href="#!">
-                            <img className="colored-svg reset-styles me-2" src="/images/settings.svg"
+                            <Image className="colored-svg reset-styles me-2" src="/images/settings.svg"
                                  alt="User statistics" width="15" height="15"/>
                             Налаштування
                         </Link>
                     </li>
                     <li>
                         <Link className="dropdown-item d-flex align-items-center" onClick={() => signOut({callbackUrl: "/"})} href="#">
-                            <img className="colored-svg reset-styles me-2" src="/images/power-off.svg"
+                            <Image className="colored-svg reset-styles me-2" src="/images/power-off.svg"
                                  alt="User statistics" width="15" height="15"/>
                             Вихід
                         </Link>

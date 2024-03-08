@@ -18,8 +18,6 @@ export async function getUserAPI() {
     const token = await getJwtAccessToken();
 
 
-    console.log(token + ' token user get !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-
     try {
         const response = await fetch(env.SERVER_API_URL + '/api/user/profile', {
             method: 'GET',
@@ -36,10 +34,11 @@ export async function getUserAPI() {
         }
 
         const userRemote = (await response.json()) as UserSuccessResponse;
+        // console.log(userRemote.dateOfCreated + " 854906854906854906895068059468905468905463963-568-356834-5685-49684950368-568-35683045-97")
         return userRemote;
         // }
     } catch (error) {
-        console.error('Error fetching data:');
+        console.error('Error fetching data USER:');
         // console.error('Error fetching data:', error);
         // Обробка помилки, якщо запит не вдалося виконати
     }

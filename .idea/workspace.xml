@@ -4,21 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53d2d9bc-c241-46fd-814a-847683b93fc1" name="Changes" comment="one commit">
-      <change afterPath="$PROJECT_DIR$/app/(protected)/user/profile/getUserAPI.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/LeftBlock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/UserNavigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/user/profile/UserPhoto.tsx" afterDir="false" />
+    <list default="true" id="53d2d9bc-c241-46fd-814a-847683b93fc1" name="Changes" comment="one three">
+      <change afterPath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SignOut.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(protected)/user/signout/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/avatar/[name]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/date.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/female.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/male.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profile_fone.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(protected)/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/user/profile/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/AboutContent.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/dynamic.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SetAllTokens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SetAllTokens.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SetHttpOnlyCookies.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/jwtSessionService/SetHttpOnlyCookies.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(protected)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(protected)/user/profile/getUserAPI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(protected)/user/profile/getUserAPI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/getAboutAPI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/getAboutAPI.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/sendForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/BlackWhiteThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/BlackWhiteThemeSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/RightGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/RightGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/update-cookies.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bootstrap.custom.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.custom.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auntification/Breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auntification/Breadcrumb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auntification/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auntification/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/Notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/Notifications.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/constantLayout/header/UserGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/header/UserGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/constantLayout/sidebar/SideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/constantLayout/sidebar/SideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/user/profile/UserInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/profile/UserInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/user/profile/UserPhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/profile/UserPhoto.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/user/profile/userstyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/profile/userstyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/configs/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,17 +44,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/send-request-on-server" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="send-request-on-server" />
+        <entry key="$PROJECT_DIR$" value="7cfe0c8cce5586f3a3edf4c5738197fd877cf089" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,30 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ReactCreateComponentLastSelected": "arrowFunctionComponent",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "send-request2",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/anatolii/WebstormProjects/lear_english_ui/app/(protected)/user/profile",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.debug.executor": "Run",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "editor.preferences.appearance",
-    "ts.external.directory.path": "C:\\Users\\anatolii\\WebstormProjects\\lear_english_ui\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ReactCreateComponentLastSelected&quot;: &quot;arrowFunctionComponent&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;7cfe0c8c&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anatolii/WebstormProjects/lear_english_ui/app/(protected)/user/signout&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.debug.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\anatolii\\WebstormProjects\\lear_english_ui\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -92,17 +111,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\(protected)\user\signout" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\(protected)\user\profile" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\(protected)\profile" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\(protected)" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\public\images" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\(protected)\user" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui" />
       <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\app\(protected)" />
-      <recent name="C:\Users\anatolii\WebstormProjects\lear_english_ui\public\images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -151,6 +171,7 @@
       <workItem from="1709371110522" duration="37907000" />
       <workItem from="1709453360025" duration="38286000" />
       <workItem from="1709543891411" duration="1168000" />
+      <workItem from="1709883654186" duration="832000" />
     </task>
     <task id="LOCAL-00001" summary="one commit">
       <option name="closed" value="true" />
@@ -160,25 +181,35 @@
       <option name="project" value="LOCAL" />
       <updated>1708800532595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="one three">
+      <option name="closed" value="true" />
+      <created>1709815804908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709815804908</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="one commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="one commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/api/update-cookies.ts</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="one three" />
+    <option name="LAST_COMMIT_MESSAGE" value="one three" />
   </component>
 </project>
